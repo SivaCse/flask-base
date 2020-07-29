@@ -15,8 +15,8 @@ python manage.py db --help --> :)
 """
 from werkzeug import generate_password_hash
 
-from om_core.data.models import db, User
-from om_core import app
+from core.api.user.model import User
+from core.api.user.model import db
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 
