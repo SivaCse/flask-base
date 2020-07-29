@@ -1,4 +1,4 @@
-from core import create_app
+from app import create_app
 
 # To do: This place will change later
 config = {

@@ -1,9 +1,7 @@
-import json
-from flask import Blueprint, jsonify, request, current_app, Response
+from flask import jsonify, request, current_app
 
-from core.api.user.model import User
-
-user = Blueprint('user', __name__)
+from . import user
+from .model import User
 
 @user.route('/', methods=['GET'])
 def get_users():

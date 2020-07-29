@@ -13,7 +13,7 @@ class Development(BaseConfig):
     DEBUG = True
     TESTING = False
     ENV = 'dev'
-    APPNAME = "OpenMonitoringDev"
+    APPNAME = "Base Flask App"
 
 class Production(BaseConfig):
     """ Production config. We use Debug mode false """
@@ -22,5 +22,5 @@ class Production(BaseConfig):
     DEBUG = False
     TESTING = False
     ENV = 'production'
-    APPNAME = "OpenMonitoringProd"
+    APPNAME = "Base Flask App"
 
