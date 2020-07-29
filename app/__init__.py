@@ -23,8 +23,8 @@ def create_app(environment):
 
     app.config.from_object(environment.get(env))
 
-    from core.api.user.controller import user
-    from core.api.post.controller import post
+    from .api.user import user
+    from .api.post import post
 
 
     """ Cors settings will be here. We maybe use this endpoint later. """
